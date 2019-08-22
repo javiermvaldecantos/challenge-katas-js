@@ -1,7 +1,7 @@
 /**
  * función que dado un número entero,
  * retorna otro número formado por sus mismos digitos ordenados descendentemente
- * @param int number numero entero el cual ordenaremos
+ * @param {int} number numero entero el cual ordenaremos
  * @return el número entero con los dígitos en orden descendente, o null si el formato del parámetro number es incorrecto.
  */
 export function kata1 (number) {
