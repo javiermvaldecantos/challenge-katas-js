@@ -51,12 +51,7 @@ function getSquareDivisorsSum(number) {
     // Empezamos a buscar divisores de 2 en adelante, encontrando pares de divisores (i, number/i)
     // De esta manera, cuando sobrepasemos la raíz cuadrada del número,
     // no hará falta seguir buscando más divisores, porque los habremos encontrado ya en los pares.
-    for (let i = 2; i < number; i++) {
-        if (i > Math.sqrt(number)) {
-            // Hemos sobrepasado la raíz cuadrada del número, por lo tanto no hace falta iterar más
-            break;
-        }
-
+    for (let i = 2; i <= Math.sqrt(number); i++) {
         if (number % i === 0) {
             // i es divisor de nuestro número, por lo que lo incluimos en la suma
             sum = sum + (i * i);
